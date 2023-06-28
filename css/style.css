@@ -308,7 +308,7 @@ body {
 
 .leaf_article_display {
     float: left;
-    width: 70%;
+    width: 75%;
     padding: 10px 20px;
 }
 
@@ -316,7 +316,7 @@ body {
     float: left;
     padding: 10px 10px;
     margin-left: 20px;
-    width: 23%;
+    width: 19%;
 }
 
 .leaf_posting-_inhome_all {
@@ -610,6 +610,198 @@ body {
 .leaf_home_article_title_all {
     display: flex;
     width: 500px;
+}
+
+/*需要修改的部分*/
+
+.leaf_home_article_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.leaf_home_article_container .leaf_home_article_card {
+    position: relative;
+    max-width: 270px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 12px;
+    padding: 20px 15px;
+    margin-top: 85px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.leaf_home_article_container .leaf_home_article_card:hover {
+    height: 420px;
+}
+
+.leaf_home_article_container .leaf_home_article_card .leaf_home_article_img_card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: -80px;
+    left: 5px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.leaf_home_article_container .leaf_home_article_card .leaf_home_article_img_card img {
+    /* max-width: 100%; */
+    height: 200px;
+    width: 200px;
+    border-radius: 4px;
+}
+
+.leaf_home_article_container .leaf_home_article_card .leaf_home_article_content_card {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.leaf_home_article_container .leaf_home_article_card:hover .leaf_home_article_content_card {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -70px;
+    transition-delay: 0.3s;
+}
+
+.leaf_article_browse_comment_like_card {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+}
+
+.leaf_article_browse_comment_like_card>span {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.leaf_home_article_title_card {
+    position: absolute;
+    bottom: 55px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.leaf_home_article_main_title_card {
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.leaf_home_article_deputy_title_card {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.leaf_home_article_container .leaf_home_article_card .leaf_home_article_title_card,
+.leaf_home_article_container .leaf_home_article_card .leaf_article_browse_comment_like_card {
+    opacity: 1;
+}
+
+.leaf_home_article_container .leaf_home_article_card.expand .leaf_home_article_title_card,
+.leaf_home_article_container .leaf_home_article_card.expand .leaf_article_browse_comment_like_card {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.leaf_article_description_texte_card {
+    line-height: 1.5;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.leaf_home_article_style_card {
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.leaf_article_topimg_card {
+    position: absolute;
+    right: 8px;
+    top: -55px;
+    z-index: -1;
+}
+
+.leaf_article_classification_card {
+    font-size: smaller;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    padding-right: 25px;
+}
+
+.leaf_article_classification_card {
+    overflow: hidden;
+    width: 0;
+    transition: width 0.5s;
+}
+
+.leaf_article_classification_card.show {
+    width: 100%;
+}
+
+.leaf_article_classification_card span {
+    opacity: 0;
+    transition: opacity 0.5s;
+    white-space: nowrap;
+}
+
+.leaf_article_classification_card.show span {
+    opacity: 1;
+}
+
+.leaf_article_classification_title_card {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.leaf_article_user_img_card {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.leaf_article_other_elements_card {
+    position: absolute;
+    top: 265px;
+    display: flex;
+    left: 0;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.leaf_article_user_name_card {
+    font-size: small;
+    margin-top: 8px;
+    margin-left: 5px;
+    text-align: left;
+    width: 70%;
+}
+
+.leaf_home_article_time_card {
+    font-size: small;
+    width: 30%;
+    margin-top: 8px;
 }
 
 /*主体部分结束*/

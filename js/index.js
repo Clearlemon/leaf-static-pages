@@ -19,12 +19,33 @@ window.addEventListener('scroll', function () {
     }
 });
 //添加文章分类的class标签元素
+//第一种文章样式
 function showDiv(element) {
     element.classList.add('show');
 }
 
 function hideDiv(element) {
     element.classList.remove('show');
+}
+// 获取所有的卡片元素
+const cards = document.querySelectorAll('.leaf_home_article_container .leaf_home_article_card');
+
+// 添加展开和不展开事件监听
+cards.forEach(card => {
+    card.addEventListener('mouseover', expandCard);
+    card.addEventListener('mouseout', collapseCard);
+});
+
+// 展开卡片
+function expandCard(event) {
+    const card = event.currentTarget;
+    card.classList.add('expand');
+}
+
+// 不展开卡片
+function collapseCard(event) {
+    const card = event.currentTarget;
+    card.classList.remove('expand');
 }
 
 let left = document.querySelector(".leaf-button-left")
