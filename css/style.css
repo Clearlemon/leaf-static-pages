@@ -731,7 +731,7 @@ body {
 
 .leaf_home_article_style_card {
     display: grid;
-    width: 95%;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
 }
 
