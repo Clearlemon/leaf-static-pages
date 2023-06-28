@@ -18,15 +18,13 @@ window.addEventListener('scroll', function () {
         targetDiv.className = 'leaf-navtop_bigbackground';
     }
 });
-
-function showDiv() {
-    var div = document.querySelector('.leaf_article_classification');
-    div.classList.add('show');
+//添加文章分类的class标签元素
+function showDiv(element) {
+    element.classList.add('show');
 }
 
-function hideDiv() {
-    var div = document.querySelector('.leaf_article_classification');
-    div.classList.remove('show');
+function hideDiv(element) {
+    element.classList.remove('show');
 }
 
 let left = document.querySelector(".leaf-button-left")
