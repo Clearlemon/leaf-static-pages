@@ -1062,7 +1062,7 @@ body {
 }
 
 .leaf_article_user_img_inthree_img_card {
-    width: 25%;
+    width: 20%;
     border-radius: 100%;
 }
 
@@ -1104,25 +1104,109 @@ body {
 }
 
 .leaf_article_photo_album_all {
-    column-count: 5;
+    column-count: 4;
     column-gap: 15px;
 }
 
 .leaf_article_photo_album_img_time_title {
     max-width: 100%;
     padding: 5px;
+    position: relative;
+
+}
+
+.leaf_photo_album_blurry_left {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 6%;
+    height: 100%;
+    z-index: 2;
+    backdrop-filter: saturate(100%) blur(3px);
+}
+
+.leaf_photo_album_blurry_top {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5%;
+    z-index: 1;
+    backdrop-filter: saturate(100%) blur(3px);
+}
+
+.leaf_photo_album_blurry_right {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 6%;
+    height: 100%;
+    z-index: 2;
+    backdrop-filter: saturate(100%) blur(3px);
+}
+
+.leaf_photo_album_blurry_bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 5%;
+    z-index: 1;
+    backdrop-filter: saturate(100%) blur(3px);
+}
+
+.leaf_photo_album_size_type {
+
+    display: none;
+}
+
+.leaf_photo_album_img_blurry:hover {
+    opacity: 1;
+    /* 鼠标悬停时淡入显示 */
+    transform: scale(1.1);
+    /* 鼠标悬停时进行放大 */
+}
+
+.leaf_photo_album_img_blurry:hover>.leaf_photo_album_size_type {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 3;
+    color: white;
+    display: block;
+    transition: opacity 0.3s;
+    transform: scale(1);
+}
+
+.photo_album_size {
+    margin: 0px 5px;
+}
+
+.photo_album_type {
+    margin: 0px 5px;
+}
+
+.photo_album_size_type {
+    font-size: 14px;
+}
+
+.leaf_home_photo_album_articles_title_main {
+    background: white;
+    font-size: 14px;
+    max-height: 5%;
+    padding: 5px;
+    padding-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.leaf_photo_album_img_blurry {
+    position: relative;
 }
 
 .leaf_article_photo_album_img {
     width: 100%;
-    border: 2px #b5b5b5 solid;
-    border-radius: 15px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.leaf_article_photo_album_img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .leaf_home_small_card_articles_style {
@@ -1135,6 +1219,7 @@ body {
     height: 100%;
     padding-bottom: 100%;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .leaf_home_rotate_card_articles_img {
@@ -1162,6 +1247,7 @@ body {
 }
 
 .leaf_home_rotate_card_articles_title {
+    margin-top: 10px;
     position: absolute;
     left: 0;
     padding: 0px 5px;
@@ -1204,6 +1290,34 @@ body {
     border-top-right-radius: 100%;
     background-position-x: center;
     background-size: cover;
+}
+
+.leaf_article_user_name_rotate_card {
+    width: 70%;
+    font-size: 14px;
+    color: white;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.leaf_article_description_texte_rotate_card {
+    line-height: 1.5;
+    max-height: 65%;
+    margin: 5px;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.leaf_article_browse_comment_like_rotate_card {
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
 }
 
 .leaf_home_rotate_card_front_articles_time {
@@ -1258,15 +1372,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* 1em = 16px */
     font-size: 1.3em;
     background-color: #fff;
+    border-radius: 10px;
+}
+
+.leaf_article_classification_rotate_card {
+    width: 96%;
+    margin: 5px;
+    font-size: small;
+    overflow: hidden;
+    line-height: 1.5;
 }
 
 .leaf_home_rotate_card_back_articles_all {
@@ -1293,6 +1414,28 @@ body {
     }
 }
 
+.leaf_home_article_three_img_card_style {
+    opacity: 0;
+    /* 初始时隐藏元素 */
+    animation: flyIn 0.5s forwards;
+    /* 应用飞入动画效果 */
+}
+
+@keyframes flyIn {
+    0% {
+        opacity: 0;
+        /* 动画开始时完全透明 */
+        transform: translateY(-100%);
+        /* 初始位置在顶部屏幕外 */
+    }
+
+    100% {
+        opacity: 1;
+        /* 动画结束时完全不透明 */
+        transform: translateY(0);
+        /* 最终位置为原始位置 */
+    }
+}
 
 /*主体部分结束*/
 /*底部部分开始*/
