@@ -27,22 +27,21 @@ function showDiv(element) {
 function hideDiv(element) {
     element.classList.remove('show');
 }
-// 获取所有的卡片元素
+//获取所有的卡片元素
 const cards = document.querySelectorAll('.leaf_home_article_container .leaf_home_article_card');
-
-// 添加展开和不展开事件监听
+//添加展开和不展开事件监听
 cards.forEach(card => {
     card.addEventListener('mouseover', expandCard);
     card.addEventListener('mouseout', collapseCard);
 });
 
-// 展开卡片
+//对应分类显示
 function expandCard(event) {
     const card = event.currentTarget;
     card.classList.add('expand');
 }
 
-// 不展开卡片
+//对应分类消失
 function collapseCard(event) {
     const card = event.currentTarget;
     card.classList.remove('expand');
@@ -112,8 +111,10 @@ for (let i = 0; i < m.length; i++) {
 // 最后的最后我们将定时器开起来，这样子图片就可以自动轮播啦
 // timer()
 
+//图片预加载功能
 window.addEventListener('DOMContentLoaded', function () {
-    var thumbnails = document.querySelectorAll('.leaf_inhome_article_img');
+    //获取图片的属性
+    var thumbnails = document.querySelectorAll('.leaf_images_are_preloaded');
 
     thumbnails.forEach(function (thumbnail) {
         var originalSrc = thumbnail.getAttribute('data-original');
@@ -138,3 +139,4 @@ window.addEventListener('DOMContentLoaded', function () {
         img.src = originalSrc;
     });
 });
+//文章图片瀑布流样式
