@@ -1689,23 +1689,24 @@ body {
 }
 
 .leaf_slider_article_swipe_right {
-    background-image: url(../img/leaf_post_time_bg.png);
     width: 35px;
     height: 35px;
     position: absolute;
     top: 40%;
     right: -15px;
     cursor: pointer;
+    transform: rotate(90deg);
 }
 
 .leaf_slider_article_swipe_left {
-    background-image: url(../img/leaf_post_time_bg.png);
+    background-image: url(../img/leaf_slider_article_swipe.png);
     width: 35px;
     height: 35px;
     position: absolute;
     top: 40%;
     left: -15px;
     cursor: pointer;
+    transform: rotate(-90deg);
 }
 
 /*主体部分结束*/
