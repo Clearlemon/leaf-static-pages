@@ -1630,6 +1630,9 @@ body {
 
 .leaf_slider_article_flex {
     width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .leaf_slider_article_all {
@@ -1638,12 +1641,8 @@ body {
 }
 
 .leaf_slider_article_all .leaf_slider_article_flex {
-    white-space: nowrap;
     margin-top: 25px;
-    font-size: 0px;
     cursor: default;
-    overflow: hidden;
-
 }
 
 .leaf_slide_slider_article_all {
@@ -1652,10 +1651,41 @@ body {
 }
 
 .leaf_slider_article_img {
-    width: calc(100% / 3);
     height: 180px;
+    width: 100%;
     object-fit: cover;
+}
+
+.leaf_slider_article_title_all {
+    background: white;
+    width: 93%;
+    height: 50px;
+    padding: 9px;
+}
+
+.leaf_slider_article_img_all {
+    flex: 0 0 auto;
     margin-left: 14px;
+    width: calc(100%/4);
+}
+
+.leaf_slider_article_title {
+    color: black;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 17px;
+}
+
+.leaf_slider_article_title_deputy {
+    color: rgb(0 0 0);
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 17px;
+    margin-top: 5px;
 }
 
 .leaf_slider_article_swipe_right {
@@ -1677,7 +1707,6 @@ body {
     left: -15px;
     cursor: pointer;
 }
-
 
 /*主体部分结束*/
 /*侧边栏部分开始*/
