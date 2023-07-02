@@ -139,4 +139,67 @@ window.addEventListener('DOMContentLoaded', function () {
         img.src = originalSrc;
     });
 });
-//文章图片瀑布流样式
+const carousel = document.querySelector(".leaf_slider_article_flex");
+const firstImg = carousel.querySelector("img");
+const arrowImgs = document.querySelectorAll(".leaf_slider_article_swipe");
+
+let isDragStart = false;
+let prevPageX, prevScrollLeft;
+let firstImgWidth = firstImg.clientWidth + 14;
+
+arrowImgs.forEach(img => {
+    img.addEventListener("click", () => {
+        const direction = img.classList.contains("leaf_slider_article_swipe_left") ? -1 : 1;
+        carousel.scrollBy({
+            left: direction * firstImgWidth,
+            behavior: "smooth"
+        });
+    });
+});
+
+const dragStart = (e) => {
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollLeft = carousel.scrollLeft;
+};
+
+const dragging = (e) => {
+    if (!isDragStart) return;
+    e.preventDefault();
+
+    const containerRect = carousel.getBoundingClientRect();
+    const containerLeft = containerRect.left;
+    const containerRight = containerRect.right;
+    const mouseX = e.clientX;
+
+    if (mouseX < containerLeft || mouseX > containerRight) {
+        dragStop();
+        return;
+    }
+
+    let positionDiff = e.pageX - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+};
+
+
+const dragStop = () => {
+    isDragStart = false;
+};
+
+const stopOnMouseLeave = (e) => {
+    const containerRect = carousel.getBoundingClientRect();
+    const containerLeft = containerRect.left;
+    const containerRight = containerRect.right;
+    const mouseX = e.clientX;
+
+    if (mouseX < containerLeft || mouseX > containerRight) {
+        dragStop();
+    }
+};
+
+carousel.addEventListener("mouseleave", stopOnMouseLeave);
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+carousel.addEventListener("mouseup", dragStop);
+
+

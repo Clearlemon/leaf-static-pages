@@ -1396,8 +1396,6 @@ body {
     white-space: nowrap;
 }
 
-
-
 .leaf_home_rotate_card_articles_all {
     display: grid;
     margin: 5px;
@@ -1629,6 +1627,57 @@ body {
     letter-spacing: 0.3px;
     display: block;
 }
+
+.leaf_slider_article_flex {
+    width: 100%;
+}
+
+.leaf_slider_article_all {
+    max-width: 100%;
+    position: relative;
+}
+
+.leaf_slider_article_all .leaf_slider_article_flex {
+    white-space: nowrap;
+    margin-top: 25px;
+    font-size: 0px;
+    cursor: default;
+    overflow: hidden;
+
+}
+
+.leaf_slide_slider_article_all {
+    display: flex;
+    flex-direction: column;
+}
+
+.leaf_slider_article_img {
+    width: calc(100% / 3);
+    height: 180px;
+    object-fit: cover;
+    margin-left: 14px;
+}
+
+.leaf_slider_article_swipe_right {
+    background-image: url(../img/leaf_post_time_bg.png);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 40%;
+    right: -15px;
+    cursor: pointer;
+}
+
+.leaf_slider_article_swipe_left {
+    background-image: url(../img/leaf_post_time_bg.png);
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 40%;
+    left: -15px;
+    cursor: pointer;
+}
+
 
 /*主体部分结束*/
 /*侧边栏部分开始*/
