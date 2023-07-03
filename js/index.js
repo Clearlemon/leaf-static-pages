@@ -139,6 +139,7 @@ window.addEventListener('DOMContentLoaded', function () {
         img.src = originalSrc;
     });
 });
+
 const carousel = document.querySelector(".leaf_slider_article_flex");
 const firstImg = carousel.querySelector("img");
 const arrowImgs = document.querySelectorAll(".leaf_slider_article_swipe");
