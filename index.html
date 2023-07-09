@@ -15,6 +15,11 @@
             overflow: hidden;
         }
     </style>
+    <!-- 网易云播放器 -->
+    <link rel="stylesheet" href="css/QPlayer_style_music.css">
+    <script src="js/QPlayer_style_music.js"></script>
+    <!-- 视频播放器的样式 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/plyr/3.6.3/plyr.min.css">
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.css" rel="stylesheet">
 </head>
 <!-- 头部代码开始 -->
@@ -1289,27 +1294,256 @@
     <!-- 侧边栏样式开始 -->
     <div class="leaf-sidebar">
         <!-- 侧边栏用户样式开始 -->
-        <div class="leaf_sidebar_user_all">
-            <div class=""></div>
+        <div class="leaf_sidebar_home_user_all">
+            <p class="leaf_sidebar_title_all">首页信息</p>
+            <div class="leaf_sidebar_user_all">
+                <div class="sidebar_home_user_bg_avatar">
+                    <div class="sidebar_home_user_bg">
+                        <img class="sidebar_img" src="img/bacg.jpg" alt="">
+                        <div class="sidebar_home_user_name_briefly">
+                            <img class="sidebar_avatar"
+                                src="https://www.asukatea.cc/wp-content/uploads/2022/12/QQ%E5%9B%BE%E7%89%8720211210225957.webp"
+                                alt="">
+                            <div class="name_briefly_all">
+                                <h3 class="sidebar_home_user_name">青柠</h3>
+                                <p class="sidebar_home_user_briefly">风吹过的叶，在空中随意飘舞</p>
+                            </div>
+                        </div>
+                        <div class="sidebar_home_user_information">
+                            <div class="user_information_comments">
+                                <span class="information_title">评论</span>
+                                <p class="information_number">16</p>
+                            </div>
+                            <div class="user_information_article">
+                                <span class="information_title">文章</span>
+                                <p class="information_number">20</p>
+                            </div>
+                            <div class="user_information_links">
+                                <span class="information_title">友联</span>
+                                <p class="information_number">34</p>
+                            </div>
+                            <div class="user_information_day">
+                                <span class="information_title">运行天数</span>
+                                <p class="information_number">189</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar_home_user_html">这里是html自定义区块了</div>
+            </div>
         </div>
         <!-- 侧边栏用户样式结束 -->
         <!-- IP地址侧边栏开始 -->
+        <div class="sidebar_home_ip_all">
+            <p class="leaf_sidebar_title_all">IP地址</p>
+            <div class="sidebar_ip_img">
+                <img class="sidebar_ip" src="https://leaf.lmeon.com/ip/" height="150">
+            </div>
+        </div>
         <!-- IP地址侧边栏结束 -->
         <!-- 文章热榜侧边栏开始 -->
         <!-- 文章热榜侧边栏结束 -->
         <!-- 侧边栏最新评论样式开始 -->
         <!-- 侧边栏最新评论样式结束 -->
         <!-- 彩色标签样式开始 -->
+        <div class="sidebar_home_tag_all">
+            <p class="leaf_sidebar_title_all">标签</p>
+            <div class="sidebar_home_tag">
+                <div class="tagcloud fl">
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">文献综述</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">对外投资</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">机器人</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">区块链</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">科技创新</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">计算机科学</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">自动驾驶</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">研究价值</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">模式识别</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">自然语言处理</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">文献综述</a></span>
+                    <span class="leaf_span_tag"><a class="leaf_link_tag" href="#">对外投资</a></span>
+                </div>
+            </div>
+        </div>
         <!-- 彩色标签样式结束 -->
         <!-- 天气样式开始 -->
+        <div class="sidebar_home_weather_all">
+            <p class="leaf_sidebar_title_all">天气</p>
+            <div class="sidebar_home_weather">
+                <link rel="stylesheet" href="https://widget.qweather.net/standard/static/css/he-standard.css?v=1.4.0">
+                <div data-v-75e43ed3="" id="he-plugin-standard"
+                    style="width: 100%; height: 270px; font-size: 12px; border-radius: 0px; background-color: rgb(255, 255, 255);">
+                    <script data-v-75e43ed3="" type="text/javascript"
+                        src="https://webapi.amap.com/maps?v=1.4.14&amp;key=d1a7a5151bc3b5f7de34c34f824da3fe"></script>
+                    <div data-v-3b50b9ba="" data-v-75e43ed3="" class="view-vertical">
+                        <div data-v-3b50b9ba="" class="wv-v-v-location">
+                            <div data-v-4b9dcab4="" data-v-3b50b9ba="" class="wv-lt-row">
+                                <div data-v-4b9dcab4="" class="wv-lt-col-7">
+                                    <div data-v-4b9dcab4="" class="wv-lt-location"><span data-v-4b9dcab4="" title="北京"
+                                            style="color: rgb(67, 67, 67);"></span> <a data-v-4b9dcab4=""
+                                            href="javascript:void(0)" style="color: rgb(67, 67, 67);">
+                                            切换
+                                        </a></div>
+                                </div>
+                                <div data-v-4b9dcab4="" class="wv-lt-col-5">
+                                    <div data-v-4b9dcab4="" class="wv-lt-refresh"><a data-v-4b9dcab4="" target="_blank"
+                                            href="https://www.qweather.com/" style="color: rgb(67, 67, 67);"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-v-3b50b9ba="" class="wv-v-v-now">
+                            <div data-v-5f4c0628="" data-v-3b50b9ba="" class="wv-n-h-now" width="230" height="270">
+                                <div data-v-5f4c0628="" class="wv-n-h-col-10 wv-n-h-text-left">
+                                    <div data-v-5f4c0628="" class="wv-n-h-now-img"><img data-v-5f4c0628=""
+                                            src="https://widget-s.qweather.net/img/plugin/190516/icon/c/100d.png">
+                                    </div>
+                                    <div data-v-5f4c0628="" class="wv-n-h-now-content">
+                                        <div data-v-5f4c0628="" class="wv-n-h-now-tmp"><span data-v-5f4c0628=""
+                                                style="color: rgb(67, 67, 67);"></span>
+                                            <div data-v-5f4c0628="" class="wv-n-h-now-alarm"><!----></div>
+                                        </div>
+                                        <div data-v-5f4c0628="" class="wv-n-h-now-txt"><span data-v-5f4c0628=""
+                                                style="color: rgb(67, 67, 67);"></span>
+                                            <div data-v-5f4c0628=""
+                                                class="wv-n-h-now-aqi-item wv-n-h-now-aqi-item-color-1">
+                                                <div data-v-5f4c0628="" class="wv-n-h-label"></div> <span
+                                                    data-v-5f4c0628="">
+
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-v-5f4c0628="" class="wv-n-h-now-rain"
+                                    style="position: relative; margin: 0.6em 0px 0em 0em;"><a data-v-5f4c0628=""
+                                        target="_blank" href="https://www.qweather.com"><img data-v-5f4c0628=""
+                                            src="https://widget-s.qweather.net/img/plugin/190516/icon/view/rain.png"></a>
+                                    <span data-v-5f4c0628="" class="wv-n-h-now-rain-text"
+                                        style="color: rgb(67, 67, 67);"></span>
+                                </div>
+                            </div>
+                            <div data-v-3b50b9ba="" class="wv-v-v-line" style="border-color: rgba(204, 204, 204, 0.5);">
+                            </div>
+                        </div>
+                        <div data-v-3b50b9ba="" class="wv-v-v-forecast">
+                            <div data-v-66693262="" data-v-3b50b9ba="" class="wv-f-forecast">
+                                <div data-v-66693262="" class="wv-f-row">
+                                    <ul data-v-66693262="" class="wv-f-col-4 wv-f-forecast-item">
+                                        <li data-v-66693262="" class="wv-f-forecast-date" style="white-space: nowrap;">
+                                            <!---->
+                                            <a data-v-66693262="" target="_blank" class="wv-f-a"
+                                                style="color: rgb(67, 67, 67);">
+
+                                            </a>
+                                        </li>
+                                        <li data-v-66693262="" class="wv-f-forecast-img" style="height: 99%;"><a
+                                                data-v-66693262="" target="_blank" class="wv-f-a"><img
+                                                    data-v-66693262=""
+                                                    src="https://widget-s.qweather.net/img/plugin/190516/icon/c/100d.png"></a>
+                                        </li>
+                                        <li data-v-66693262="" class="wv-f-forecast-tmp" style="white-space: nowrap;"><a
+                                                data-v-66693262="" target="_blank" class="wv-f-a"
+                                                style="color: rgb(67, 67, 67);">
+                                            </a> <span data-v-66693262="" class="wv-f-forecast-aqi-2">
+
+                                            </span></li>
+                                    </ul>
+                                    <ul data-v-66693262="" class="wv-f-col-4 wv-f-forecast-item">
+                                        <li data-v-66693262="" class="wv-f-forecast-date" style="white-space: nowrap;">
+                                            <!---->
+                                            <a data-v-66693262="" target="_blank" class="wv-f-a"
+                                                style="color: rgb(67, 67, 67);">
+
+                                            </a>
+                                        </li>
+                                        <li data-v-66693262="" class="wv-f-forecast-img" style="height: 99%;"><a
+                                                data-v-66693262="" target="_blank" class="wv-f-a"><img
+                                                    data-v-66693262=""
+                                                    src="https://widget-s.qweather.net/img/plugin/190516/icon/c/100d.png"></a>
+                                        </li>
+                                        <li data-v-66693262="" class="wv-f-forecast-tmp" style="white-space: nowrap;"><a
+                                                data-v-66693262="" target="_blank" class="wv-f-a"
+                                                style="color: rgb(67, 67, 67);">
+                                            </a> <span data-v-66693262="" class="wv-f-forecast-aqi-2">
+                                            </span></li>
+                                    </ul>
+                                    <ul data-v-66693262="" class="wv-f-col-4 wv-f-forecast-item">
+                                        <li data-v-66693262="" class="wv-f-forecast-date" style="white-space: nowrap;">
+                                            <!---->
+                                            <a data-v-66693262="" target="_blank" class="wv-f-a"
+                                                style="color: rgb(67, 67, 67);">
+                                            </a>
+                                        </li>
+                                        <li data-v-66693262="" class="wv-f-forecast-img" style="height: 99%;"><a
+                                                data-v-66693262="" target="_blank" class="wv-f-a"><img
+                                                    data-v-66693262=""
+                                                    src="https://widget-s.qweather.net/img/plugin/190516/icon/c/100d.png"></a>
+                                        </li>
+                                        <li data-v-66693262="" class="wv-f-forecast-tmp" style="white-space: nowrap;"><a
+                                                data-v-66693262="" target="_blank" class="wv-f-a"
+                                                style="color: rgb(67, 67, 67);">
+                                            </a> <span data-v-66693262="" class="wv-f-forecast-aqi-3">
+                                            </span></li>
+                                    </ul>
+                                </div>
+                            </div> <!---->
+                        </div>
+                    </div>
+                    <script>
+                        WIDGET = {
+                            "CONFIG": {
+                                "layout": "2",
+                                "height": 270,
+                                "background": "2",
+                                "dataColor": "434343",
+                                "key": "4837d979e7114d26b28e328aa856d6f8"
+                            }
+                        }
+                    </script>
+                    <script src="https://widget.qweather.net/standard/static/js/he-standard-common.js?v=2.0"></script>
+                </div>
+            </div>
+        </div>
         <!-- 天气样式结束 -->
         <!-- 时间样式开始 -->
+        <div class="leaf_sidebar_home_time_all">
+            <p class="leaf_sidebar_title_all">时间</p>
+            <div class="sidebar_home_time">
+                <canvas id="canvas" style="width: 100%;"></canvas>
+            </div>
+        </div>
         <!-- 时间样式结束 -->
         <!-- 网易云播放器样式开始 -->
+        <div class="leaf_sidebar_home_netease_cloud_music">
+            <p class="leaf_sidebar_title_all">网易云音乐</p>
+            <div class="netease_cloud_music">
+
+            </div>
+        </div>
         <!-- 网易云播放器样式结束 -->
         <!-- 视频样式开始 -->
+        <div class="leaf_sidebar_home_video_all">
+            <p class="leaf_sidebar_title_all">视频</p>
+            <div class="sidebar_home_video_all">
+                <video id="videoAr">
+                    <source src="img/39day.mp4">
+                </video>
+            </div>
+        </div>
         <!-- 视频样式结束 -->
         <!-- 一言样式开始 -->
+        <div class="leaf_sidebar_home_one_word_all">
+            <p class="leaf_sidebar_title_all">一言</p>
+            <div class="sidebar_home_one_word">
+                <div class="sidebar_home_one_word_in">
+                    <div class="one_word_left">『</div>
+                    <div class="one_word" id="hitokoto_text">团子，团子，团子，团子大家族！！！</div>
+                    <div class="one_word_right">』</div>
+                </div>
+
+                <div class="one_word_name">—— 「CLannad」</div>
+            </div>
+        </div>
         <!-- 一言样式结束 -->
         <!-- 文章内页用户信息开始 -->
         <!-- 文章内页用户信息结束 -->
@@ -1323,7 +1557,110 @@
 </footer>
 
 <body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/plyr/3.6.4/plyr.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/iconfont.js"></script>
+    <script>
+        let vs = document.getElementById('videoAr');
+        const player = new Plyr(vs, {
+            i18n: {
+                speed: '速度',
+                normal: '正常',
+            },
+            loop: {
+                active: true
+            },
+            speed: {
+                selected: 1,
+                options: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 3, 4],
+            },
+            disableContextMenu: true
+
+        });
+        window.player = player;
+
+        tagcloud({
+            selector: ".tagcloud",  //元素选择器
+            fontsize: 14,       //基本字体大小, 单位px
+            radius: 65,         //滚动半径, 单位px
+            mspeed: "slow",   //滚动最大速度, 取值: slow, normal(默认), fast
+            ispeed: "slow",   //滚动初速度, 取值: slow, normal(默认), fast
+            direction: 135,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
+            keep: true          //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
+        });
+
+        //播放器
+        window.QPlayer.list = [
+            {
+                "name": "且听风吟",
+                "artist": "V.A.",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/且听风吟.mp3"
+            },
+            {
+                "name": "白色",
+                "artist": "灰澈",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/白色.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/白色.jpg"
+            },
+            {
+                "name": "渚 Warm Piano Arrange",
+                "artist": "Key Sounds Label",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/渚 Warm Piano Arrange.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/渚 Warm Piano Arrange.jpg"
+            },
+            {
+                "name": "小さなてのひら",
+                "artist": "水月陵",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/小さなてのひら.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/小さなてのひら.jpg"
+            },
+            {
+                "name": "Nightglow",
+                "artist": "蔡健雅",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Nightglow.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Nightglow.jpg",
+                "lrc": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Nightglow.lrc"
+            },
+            {
+                "name": "やわらかな光",
+                "artist": "やまだ豊",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/やわらかな光.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/やわらかな光.jpg"
+            },
+            {
+                "name": "Saya's Song",
+                "artist": "Lia",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Saya's Song.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Saya's Song.jpg",
+                "lrc": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/Saya's Song.lrc"
+            },
+            {
+                "name": "一番の宝物 (Original Version)",
+                "artist": "karuta",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/一番の宝物 (Original Version).mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/一番の宝物 (Original Version).jpg",
+                "lrc": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/一番の宝物 (Original Version).lrc"
+            },
+            {
+                "name": "僕が死のうと思ったのは",
+                "artist": "中島美嘉",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/僕が死のうと思ったのは.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/僕が死のうと思ったのは.jpg",
+                "lrc": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/僕が死のうと思ったのは.lrc"
+            },
+            {
+                "name": "跟太阳系说再见",
+                "artist": "祝乾亮",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/跟太阳系说再见.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/跟太阳系说再见.jpg"
+            },
+            {
+                "name": "I Love Study 我爱学习（Off Vocal）",
+                "artist": "秋风MusiX",
+                "audio": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/I Love Study 我爱学习（Off Vocal）.mp3",
+                "cover": "https://cdn.jsdelivr.net/gh/moeshin/QPlayer-res/I Love Study 我爱学习（Off Vocal）.jpg"
+            }
+        ];
+    </script>
 
 </html>

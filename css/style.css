@@ -302,13 +302,13 @@ body {
 /*头部部分结束*/
 /*主体部分*/
 .leaf_postings_main {
-    margin: 0px 250px;
+    margin: 0px 220px;
     margin-top: 25px;
 }
 
 .leaf_article_display {
     float: left;
-    width: 75%;
+    width: 72%;
     padding: 10px 20px;
 }
 
@@ -316,7 +316,7 @@ body {
     float: left;
     padding: 10px 10px;
     margin-left: 20px;
-    width: 19%;
+    width: 22%;
 }
 
 .leaf_posting_inhome_all {
@@ -1345,6 +1345,7 @@ body {
     border-top-right-radius: 100%;
     background-position-x: center;
     background-size: cover;
+    z-index: -1;
 }
 
 .leaf_article_user_name_rotate_card {
@@ -1450,7 +1451,7 @@ body {
 }
 
 .leaf_article_classification_rotate_card {
-    width: 96%;
+    width: 90%;
     margin: 5px;
     font-size: small;
     overflow: hidden;
@@ -1711,6 +1712,185 @@ body {
 
 /*主体部分结束*/
 /*侧边栏部分开始*/
+.leaf-sidebar>* {
+    padding: 10px 5px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar_img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.leaf_sidebar_home_user_all {
+    height: 480px;
+}
+
+.sidebar_home_user_bg {}
+
+.sidebar_home_user_bg_avatar {
+    height: 60%;
+}
+
+.sidebar_avatar {
+    width: 26%;
+    border-radius: 100%;
+    margin-top: -20px;
+    margin-left: 20px;
+}
+
+.sidebar_home_user_name_briefly {
+    display: flex;
+}
+
+.name_briefly_all {
+    width: 70%;
+}
+
+.sidebar_home_user_briefly {
+    font-size: small;
+    margin-top: 5px;
+}
+
+.sidebar_home_user_information {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.information_title {
+    font-size: 15px;
+}
+
+.information_number {
+    font-size: 15px;
+}
+
+.sidebar_home_user_html {
+    margin: 10px;
+    height: 35%;
+}
+
+.user_information_comments,
+.user_information_article,
+.user_information_links,
+.user_information_day {
+    width: 25%;
+    text-align: center;
+}
+
+.sidebar_ip {
+    width: 100%;
+}
+
+
+
+.leaf_sidebar_title_all {
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+
+.sidebar_home_time {
+    padding: 20px 10px;
+}
+
+div#he-plugin-standard {
+    width: 100% !important;
+}
+
+video#videoAr {
+    width: 100%;
+    max-height: 100%;
+}
+
+.sidebar_home_video_all {
+    width: 100%;
+}
+
+.one_word_left,
+.one_word_right {
+    margin: 0px 5px;
+    width: 10%;
+}
+
+.one_word_left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.one_word_right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.one_word_name {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.one_word {
+    width: 80%;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.7px;
+}
+
+.sidebar_home_one_word_in {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+
+/*要修改的*/
+.tagcloud {
+    min-height: 300px !important;
+    min-width: 300px !important;
+    margin-left: -75px;
+}
+
+.tagcloud a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    padding: 3px 10px;
+    color: black;
+    font-size: 14px;
+    border-radius: 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4,Direction=135, Color='#000000')";
+    /*兼容ie7/8*/
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#969696', Direction=125, Strength=9);
+    /*strength是阴影大小，direction是阴影方位，单位为度，可以为负数，color是阴影颜色 （尽量使用数字）使用IE滤镜实现盒子阴影的盒子必须是行元素或以行元素显示（block或inline-block;）*/
+}
+
+.tagcloud a:hover {
+    color: #3385cf;
+}
+
+.netease_cloud_music {
+    max-height: 100%;
+    padding: 20px;
+}
+
+.expand-animation {
+    animation-name: expand;
+    animation-duration: 0.5s;
+}
+
+@keyframes expand {
+    0% {
+        height: 50px;
+    }
+
+    100% {
+        height: 410px;
+    }
+}
+
 /* 侧边栏部分结束 */
 /*底部部分开始*/
 /*底部部分结束*/
