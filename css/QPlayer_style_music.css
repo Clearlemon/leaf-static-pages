@@ -260,7 +260,7 @@
 #QPlayer-more.QPlayer-lyrics-show,
 #QPlayer-more.QPlayer-list-show.QPlayer-lyrics-show {
     /* transform: translateX(0); */
-    height: 410px;
+    height: 440px;
     transition: height .8s;
 }
 
@@ -314,8 +314,8 @@
 }
 
 #QPlayer-more.QPlayer-lyrics-show #QPlayer-lyrics {
-    display: none;
-    height: 160px;
+    height: 100px;
+    width: 100%;
     border: 1px solid #DEDEDE;
 }
 
