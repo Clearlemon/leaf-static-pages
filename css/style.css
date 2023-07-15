@@ -2016,4 +2016,20 @@ video#videoAr {
 
 /* 侧边栏部分结束 */
 /*底部部分开始*/
+.leaf_footer_all {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: white;
+    height: 30px;
+}
+
+
+.leaf_footer_content>p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #7c7575;
+    letter-spacing: 0.3px;
+}
+
 /*底部部分结束*/
